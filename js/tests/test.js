@@ -1,4 +1,4 @@
-var expect = require('chai').expect;
+﻿var expect = require('chai').expect;
 var should = require('chai').should();
 var assert = require('chai').assert;
 var sinon = require('sinon');
@@ -15,6 +15,14 @@ describe('Account', function() {
 		});
 	});
 
+	describe('#constructor', function() {
+		it(`should initialise to a zero balance default & empty tx array- i made a change`, function() {
+			account = new Account("MyAccount");
+			expect(account.balance).to.equal(0);
+			assert(account.txs.length == 0);
+		});
+	});
+	
 	describe('#credit', function() {
 		it(`should add a given amount to the current balance`, function() {
 			account = new Account("MyAccount", 200);
