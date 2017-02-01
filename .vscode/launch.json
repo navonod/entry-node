@@ -20,7 +20,7 @@
             "port": 5858,
             "program": "${workspaceRoot}/node_modules/mocha/bin/mocha",
             "stopOnEntry": false,
-            "args": ["test.js"],
+            "args": ["js/tests/test.js"],
             "cwd": "${workspaceRoot}",
             "outFiles": [],
             "sourceMaps": true,

@@ -4,6 +4,15 @@ Account = class Account {
         this.balance = balance || 0;
         this.txs = txs || [];
     }
+
+	credit(amount) {
+		this.balance += amount;
+	}
+
+	debit(amount) {
+		this.balance -= amount;
+	}
+
 }
 
 module.exports = {
