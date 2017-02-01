@@ -1,0 +1,8 @@
+{
+    "description": "Server-side processing of the Entry app's REST endpoints",
+    "license": "MIT",
+    "repository": "git@github.com:navonod/entry-node.git",
+    "scripts": {
+        "test": "mocha"
+    }
+}
